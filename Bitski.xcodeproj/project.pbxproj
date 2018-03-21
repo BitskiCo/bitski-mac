@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D328845A2062DA2F00C26B70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32884592062DA2F00C26B70 /* AppDelegate.swift */; };
+		D328845C2062DA2F00C26B70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D328845B2062DA2F00C26B70 /* ViewController.swift */; };
+		D328845E2062DA2F00C26B70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D328845D2062DA2F00C26B70 /* Assets.xcassets */; };
+		D32884612062DA2F00C26B70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D328845F2062DA2F00C26B70 /* Main.storyboard */; };
+		D32884702062DA4600C26B70 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D328846F2062DA4600C26B70 /* Cocoa.framework */; };
+		D32884732062DA4600C26B70 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32884722062DA4600C26B70 /* SafariExtensionHandler.swift */; };
+		D32884752062DA4600C26B70 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32884742062DA4600C26B70 /* SafariExtensionViewController.swift */; };
+		D32884782062DA4600C26B70 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D32884762062DA4600C26B70 /* SafariExtensionViewController.xib */; };
+		D328847B2062DA4600C26B70 /* inject.js in Resources */ = {isa = PBXBuildFile; fileRef = D328847A2062DA4600C26B70 /* inject.js */; };
+		D328847D2062DA4600C26B70 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D328847C2062DA4600C26B70 /* ToolbarItemIcon.pdf */; };
+		D32884812062DA4600C26B70 /* Bitski.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D328846D2062DA4600C26B70 /* Bitski.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D32884882062DF5500C26B70 /* bitski.js in Resources */ = {isa = PBXBuildFile; fileRef = D32884862062DC4900C26B70 /* bitski.js */; };
+		D39122B42062E635001B6737 /* initialize.js in Resources */ = {isa = PBXBuildFile; fileRef = D39122B32062E635001B6737 /* initialize.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D328847F2062DA4600C26B70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D328844E2062DA2F00C26B70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D328846C2062DA4600C26B70;
+			remoteInfo = BitskiSafariExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D32884852062DA4600C26B70 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D32884812062DA4600C26B70 /* Bitski.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D32884562062DA2F00C26B70 /* Bitski.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bitski.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D32884592062DA2F00C26B70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D328845B2062DA2F00C26B70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D328845D2062DA2F00C26B70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D32884602062DA2F00C26B70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D32884622062DA2F00C26B70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D32884632062DA2F00C26B70 /* Bitski.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bitski.entitlements; sourceTree = "<group>"; };
+		D328846D2062DA4600C26B70 /* Bitski.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Bitski.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D328846F2062DA4600C26B70 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D32884722062DA4600C26B70 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		D32884742062DA4600C26B70 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		D32884772062DA4600C26B70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		D32884792062DA4600C26B70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D328847A2062DA4600C26B70 /* inject.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = inject.js; sourceTree = "<group>"; };
+		D328847C2062DA4600C26B70 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		D328847E2062DA4600C26B70 /* BitskiSafariExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BitskiSafariExtension.entitlements; sourceTree = "<group>"; };
+		D32884862062DC4900C26B70 /* bitski.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = bitski.js; sourceTree = "<group>"; };
+		D32884892062E34E00C26B70 /* bitski.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = bitski.js.map; sourceTree = "<group>"; };
+		D39122B32062E635001B6737 /* initialize.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = initialize.js; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D32884532062DA2F00C26B70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D328846A2062DA4600C26B70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D32884702062DA4600C26B70 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D328844D2062DA2F00C26B70 = {
+			isa = PBXGroup;
+			children = (
+				D32884582062DA2F00C26B70 /* BitskiMacApp */,
+				D32884712062DA4600C26B70 /* BitskiSafariExtension */,
+				D328846E2062DA4600C26B70 /* Frameworks */,
+				D32884572062DA2F00C26B70 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D32884572062DA2F00C26B70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D32884562062DA2F00C26B70 /* Bitski.app */,
+				D328846D2062DA4600C26B70 /* Bitski.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D32884582062DA2F00C26B70 /* BitskiMacApp */ = {
+			isa = PBXGroup;
+			children = (
+				D32884592062DA2F00C26B70 /* AppDelegate.swift */,
+				D328845B2062DA2F00C26B70 /* ViewController.swift */,
+				D328845D2062DA2F00C26B70 /* Assets.xcassets */,
+				D328845F2062DA2F00C26B70 /* Main.storyboard */,
+				D32884622062DA2F00C26B70 /* Info.plist */,
+				D32884632062DA2F00C26B70 /* Bitski.entitlements */,
+			);
+			path = BitskiMacApp;
+			sourceTree = "<group>";
+		};
+		D328846E2062DA4600C26B70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D328846F2062DA4600C26B70 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D32884712062DA4600C26B70 /* BitskiSafariExtension */ = {
+			isa = PBXGroup;
+			children = (
+				D32884722062DA4600C26B70 /* SafariExtensionHandler.swift */,
+				D32884742062DA4600C26B70 /* SafariExtensionViewController.swift */,
+				D32884762062DA4600C26B70 /* SafariExtensionViewController.xib */,
+				D32884792062DA4600C26B70 /* Info.plist */,
+				D32884862062DC4900C26B70 /* bitski.js */,
+				D328847A2062DA4600C26B70 /* inject.js */,
+				D39122B32062E635001B6737 /* initialize.js */,
+				D32884892062E34E00C26B70 /* bitski.js.map */,
+				D328847C2062DA4600C26B70 /* ToolbarItemIcon.pdf */,
+				D328847E2062DA4600C26B70 /* BitskiSafariExtension.entitlements */,
+			);
+			path = BitskiSafariExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D32884552062DA2F00C26B70 /* Bitski Mac App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D32884662062DA2F00C26B70 /* Build configuration list for PBXNativeTarget "Bitski Mac App" */;
+			buildPhases = (
+				D32884522062DA2F00C26B70 /* Sources */,
+				D32884532062DA2F00C26B70 /* Frameworks */,
+				D32884542062DA2F00C26B70 /* Resources */,
+				D32884852062DA4600C26B70 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D32884802062DA4600C26B70 /* PBXTargetDependency */,
+			);
+			name = "Bitski Mac App";
+			productName = Bitski;
+			productReference = D32884562062DA2F00C26B70 /* Bitski.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D328846C2062DA4600C26B70 /* Bitski Safari Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D32884842062DA4600C26B70 /* Build configuration list for PBXNativeTarget "Bitski Safari Extension" */;
+			buildPhases = (
+				D32884692062DA4600C26B70 /* Sources */,
+				D328846A2062DA4600C26B70 /* Frameworks */,
+				D328846B2062DA4600C26B70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bitski Safari Extension";
+			productName = BitskiSafariExtension;
+			productReference = D328846D2062DA4600C26B70 /* Bitski.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D328844E2062DA2F00C26B70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Out There Labs";
+				TargetAttributes = {
+					D32884552062DA2F00C26B70 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					D328846C2062DA4600C26B70 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D32884512062DA2F00C26B70 /* Build configuration list for PBXProject "Bitski" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D328844D2062DA2F00C26B70;
+			productRefGroup = D32884572062DA2F00C26B70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D32884552062DA2F00C26B70 /* Bitski Mac App */,
+				D328846C2062DA4600C26B70 /* Bitski Safari Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D32884542062DA2F00C26B70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D328845E2062DA2F00C26B70 /* Assets.xcassets in Resources */,
+				D32884612062DA2F00C26B70 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D328846B2062DA4600C26B70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D328847D2062DA4600C26B70 /* ToolbarItemIcon.pdf in Resources */,
+				D32884782062DA4600C26B70 /* SafariExtensionViewController.xib in Resources */,
+				D32884882062DF5500C26B70 /* bitski.js in Resources */,
+				D39122B42062E635001B6737 /* initialize.js in Resources */,
+				D328847B2062DA4600C26B70 /* inject.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D32884522062DA2F00C26B70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D328845C2062DA2F00C26B70 /* ViewController.swift in Sources */,
+				D328845A2062DA2F00C26B70 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D32884692062DA4600C26B70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D32884752062DA4600C26B70 /* SafariExtensionViewController.swift in Sources */,
+				D32884732062DA4600C26B70 /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D32884802062DA4600C26B70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D328846C2062DA4600C26B70 /* Bitski Safari Extension */;
+			targetProxy = D328847F2062DA4600C26B70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D328845F2062DA2F00C26B70 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D32884602062DA2F00C26B70 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D32884762062DA4600C26B70 /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D32884772062DA4600C26B70 /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D32884642062DA2F00C26B70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D32884652062DA2F00C26B70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		D32884672062DA2F00C26B70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BitskiMacApp/Bitski.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TM2623B5AA;
+				INFOPLIST_FILE = BitskiMacApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.outtherelabs.Bitski;
+				PRODUCT_NAME = Bitski;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		D32884682062DA2F00C26B70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BitskiMacApp/Bitski.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TM2623B5AA;
+				INFOPLIST_FILE = BitskiMacApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.outtherelabs.Bitski;
+				PRODUCT_NAME = Bitski;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		D32884822062DA4600C26B70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BitskiSafariExtension/BitskiSafariExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TM2623B5AA;
+				INFOPLIST_FILE = BitskiSafariExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.outtherelabs.Bitski.BitskiSafariExtension;
+				PRODUCT_NAME = Bitski;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		D32884832062DA4600C26B70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BitskiSafariExtension/BitskiSafariExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TM2623B5AA;
+				INFOPLIST_FILE = BitskiSafariExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.outtherelabs.Bitski.BitskiSafariExtension;
+				PRODUCT_NAME = Bitski;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D32884512062DA2F00C26B70 /* Build configuration list for PBXProject "Bitski" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D32884642062DA2F00C26B70 /* Debug */,
+				D32884652062DA2F00C26B70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D32884662062DA2F00C26B70 /* Build configuration list for PBXNativeTarget "Bitski Mac App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D32884672062DA2F00C26B70 /* Debug */,
+				D32884682062DA2F00C26B70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D32884842062DA4600C26B70 /* Build configuration list for PBXNativeTarget "Bitski Safari Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D32884822062DA4600C26B70 /* Debug */,
+				D32884832062DA4600C26B70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D328844E2062DA2F00C26B70 /* Project object */;
+}
